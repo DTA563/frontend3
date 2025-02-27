@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: youngserif;
+    background-color: hsla(14, 45%, 36%, 0.415);
+    padding: 60px 0;
+    /* color: hsl(30, 10%, 34%); */
+}
+
+.container{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;    
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+p{
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+}
+
+.prep-time{
+    /* background-color: hsla(333, 17%, 56%, 0.307); */
+    background-color: #ffc4fe2c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.prep-time ul > li::marker{
+    color: hsl(332, 51%, 32%);
+}
+    
+
+.prep-time h2{
+    color: hsl(332, 51%, 32%);
+}
+
+li{
+    color: hsl(30, 10%, 34%);
+}
+
+h3{
+    display: inline;
+}
+
+.ingredient h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredient ul{
+    list-style-type: square;
+}
+
+.ingredient ul > li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredient ul > li{
+    padding-bottom: 9px;
+}
+
+.line {
+    width: 100%; 
+    height: 1.7px; 
+    background-color: hsla(32, 10%, 34%, 0.278); 
+}
+
+.instruction h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.instruction ol > li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.instruction ol > li{
+    padding-bottom: 9px;
+}
+
+.nutrition h2{
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 10px;
+}
+
+.nutrition-value {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.nutrition-item1 p{
+    display: flex;
+    gap: 274px;
+}
+
+.nutrition-item2 p{
+    display: flex;
+    gap: 290px;
+}
+
+.nutrition-item3 p{
+    display: flex;
+    gap: 278px;
+}
+
+.nutrition-item4 p{
+    display: flex;
+    gap: 305px;
+}
+
+@media screen and (max-width: 376px){
+    body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        background-color: transparent;
+    }
+
+    img {
+        width: 100%;
+        height: auto; 
+        border-radius: 0; 
+        display: block; 
+        padding: 0;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5; 
+        text-align: justify; 
+    }
+
+    .nutrition-item {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nutrition-value {
+        min-width: 50px;
+    }
+
+}
+
+
+
